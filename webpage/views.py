@@ -1,16 +1,18 @@
 from django.shortcuts import render
-from webpage.models import Post
+from django.contrib import messages
+from .forms import FeedbackForm
+from django.shortcuts import redirect
 
 # Create your views here.
 def index(request):
     """View function for home page of site."""
-
-    # Generate counts of some of the main objects
-    num_posts = Post.objects.all().count()
+    if request.method == 'POST':
+        f = FeedbackForm(request.POST)
+        if f.is_valid():
+            f.save()
+            messages.add_message(request, messages.INFO, 'Feedback Submitted.')
+            return render(request, 'index.html', {'form': f, 'sent': True})
+    else:
+        f = FeedbackForm()
     
-    context = {
-        'num_posts': num_posts,
-    }
-
-    # Render the HTML template index.html with the data in the context variable
-    return render(request, 'index.html', context=context)
+    return render(request, 'index.html', {'form': f})
