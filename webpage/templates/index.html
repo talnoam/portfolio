@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    {% block title %}
+    <title>PolyWeb</title>
+    {% endblock %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon" />
+    <link
+      href="{% static 'img/apple-touch-icon.png' %}"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/icofont/icofont.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/remixicon/remixicon.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/boxicons/css/boxicons.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'vendor/venobox/venobox.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/aos/aos.css' %}" />
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static './load.css' %}" />
+    <link rel="stylesheet" href="../templates/sphere.scss" />
+    <!-- =======================================================
+  * Template Name: Vesperr - v2.2.0
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  </head>
+  {% block content %}<!-- ======= Header ======= -->
+
+ 
+  
+  <body>
+   
+       
+    <div class="loader"></div>
+  
+    
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center">
+        <div class="logo mr-auto">
+          <h1 class="text-light">
+            <img src="../static/img/favicon.png" alt="" >
+            <a href="index.html"><span></span></a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li class="get-started"><a href="#about">START A PROJECT</a></li>
+            <li class="elementor-widget-container"><div class="elementor-image"> <a href="https://wa.me/972508989062"> <img width="150" height="150" src="https://i0.wp.com/www.shakdan.co.il/wp-content/uploads/2019/10/Whatsapp-button-1.png?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" srcset="https://i0.wp.com/www.shakdan.co.il/wp-content/uploads/2019/10/Whatsapp-button-1.png?w=300&amp;ssl=1 300w, https://i0.wp.com/www.shakdan.co.il/wp-content/uploads/2019/10/Whatsapp-button-1.png?resize=150%2C150&amp;ssl=1 150w" sizes="(max-width: 50px) 100vw, 150px"> </a></div></li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <canvas id="canvas"></canvas>
+      <div class="container">
+        <div class="row">
+          <div
+            id="main"
+            class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
+          >
+          
+            <h1 data-aos="fade-up">PolyWeb</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">
+             <p>Web Development Agency,</p> We are digital architects.
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="800">
+              <a href="#about" class="btn-get-started scrollto"
+                >START A PROJECT</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-lg-6 order-1 order-lg-2 hero-img"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div class="moon">
+              <img
+                src="https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/space-rocket-512.png"
+                style="width: 30px; height: 20px"
+                class="loader"
+              />
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>About Us</h2>
+          </div>
+
+          <div class="row content">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+              <h2>Quality breeds quality.</h2>
+            <p>These are the things we stand for.</p>
+              <ul>
+                <li>
+                  <i class="ri-check-double-line"></i> <p style="color: #FFA500">INNOVATION</p> Modern
+                  technology allows us to create immersive digital experiences
+                  for a wide range of devices.
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> <p style="color: #FFA500">USER CENTERED DESIGN</p>We
+                  believe every digital experience should be elegant, intuitive,
+                  and enjoyable for it’s users.
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i><p style="color: #FFA500"> FORWARD THINKING
+                    DEVELOPMENT</p> Our development efforts are focused on high
+                  performance, reliability, and scalability.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <p>
+                At PolyWeb we build and maintain the best websites and web apps
+                in the digital world, personalized and specially developed for
+                Our customers. </p><p> continuously improved process begins with a
+                digital strategy and ends with the launch of an exceptional web
+                product.</p> <p>Your website could be the next project
+                in our portfolio.</p>
+              
+              <a href="#" class="btn-learn-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Us Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container">
+          <div class="row">
+            <div
+              class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
+              <img
+                src="{% static 'img/hero-img.svg' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+
+            <div
+              class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <div class="content d-flex flex-column justify-content-center">
+                <div class="row">
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="icofont-simple-smile"></i>
+                      <span data-toggle="counter-up">1</span>
+                      <p>
+                        <strong>Happy Clients</strong> 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="icofont-document-folder"></i>
+                      <span data-toggle="counter-up">1</span>
+                      <p>
+                        <strong>Projects</strong> 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="icofont-clock-time"></i>
+                      <span data-toggle="counter-up">1</span>
+                      <p>
+                        <strong>Years of experience</strong> 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="icofont-coffee-mug"></i>
+                      <span data-toggle="counter-up">30</span>
+                      <p>
+                        <strong>Cups of coffee</strong> 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End .content-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Services</h2>
+            <p>From digital ideas to happy customers.</p>
+            <p>We're happy to provide our services where you need it most.</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bx bx-code-block"></i></div>
+                <h4 class="title"><a href="">Web Development</a></h4>
+                <p class="description">
+                  
+                  We create cool looking website or web applications that complements your brand.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="bx bx-mobile-alt"></i></div>
+                <h4 class="title"><a href="">App Development</a></h4>
+                <p class="description">We Design and Build
+                  Web apps for iOS, Android and cross platform Apps.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class='bx bx-store'></i></i></div>
+                <h4 class="title"><a href="">E-commerce</a></h4>
+                <p class="description">
+                  We offer A Complete e-commerce solutions.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon"><i class='bx bx-search-alt' ></i></i></div>
+                <h4 class="title"><a href="">SEO</a></h4>
+                <p class="description">
+                  Search Engine Optimization, We improve search result rankings and acquiring additional traffic.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Technology</h2>
+            <p>These are some of the Technologies we use</p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-3 col-md-4">
+              <div class="icon-box">
+                <i class='bx bxl-html5'style="color: #EA6328" ></i>
+                
+                <h3><a href="">HTML5</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class='bx bxl-css3'style="color: #2866F0" ></i>                <h3><a href="">CSS3</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class='bx bxl-javascript'style="color: #ffbb2c" ></i>                <h3><a href="">JavaScript</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+              <div class="icon-box">
+                <i class='bx bxl-bootstrap'style="color: #612EAC" ></i>                <h3><a href="">Bootstrap</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-database-2-line" style="color: #47aeff"></i>
+                <h3><a href="">Python</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class='bx bxl-vuejs'style="color: #02C180" ></i>                <h3><a href="">VueJs</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class='bx bxl-react'style="color: #60DBFB" ></i>                <h3><a href="">ReactJs</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-price-tag-2-line" style="color: #151618"></i>
+                <h3><a href="">Django</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class='bx bxl-sass'style="color: #EBDEE4" ></i>                <h3><a href="">Sass</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class='bx bxl-wordpress'style="color: #20759A" ></i>                <h3><a href="">Wordpress</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class='bx bxl-shopify'style="color: #96BF46" ></i>                <h3><a href="">Shopify</a></h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-fingerprint-line" style="color: #099DEC"></i>
+                <h3><a href="">Docker</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Features Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>We thrive on building cool things.</h2>
+            <p>Take a look at a few of our projects.</p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">Web</li>
+                <li data-filter=".filter-card">Apps</li>
+                <li data-filter=".filter-web">Ecommerce</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a
+                    href="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="App 1"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                src="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a
+                    href="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="Web 3"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                src="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a
+                    href="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="App 2"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                src="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Card 2</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a
+                    href="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="Card 2"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                src="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Web 2</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a
+                    href="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="Web 2"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                src="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a
+                    href="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="App 3"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                src="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Card 1</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a
+                    href="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="Card 1"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                src="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Card 3</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a
+                    href="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="Card 3"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                src="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="{% static 'img/portfolio/f186d1_8a28db63b7574babb9854cfd0805842e_mv2.gif' %}"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="Web 3"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Contact Us</h2>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="contact-about">
+                <h3>Let's build together.</h3>
+                <p>
+                  Our headquarters are in israel and we work with Clients located around the world. If you are looking for a quote on a new project, please fill out the form here.
+                </p>
+                <div class="social-links">
+                 
+                  <a href="https://fb.me/polyweb2" class="facebook"
+                  ><i class="icofont-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/poly.web/" class="instagram"
+                  ><i class="icofont-instagram"></i
+                ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="icofont-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 mt-4 mt-md-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="info">
+               
+
+                <div>
+                  <i class="ri-mail-send-line"></i><a href="mailto:PolyWeb2@gamil.com?subject=your title&body=Your message">
+                    <p>PolyWeb2@gamil.com</p>
+                </a>
+
+                </div>
+
+                <div>
+                  <i class="ri-phone-line"></i><a href="https://api.whatsapp.com/send?phone=972508989062">
+                  <p>+972 508989062 </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+            
+
+            <div
+              class="col-lg-5 col-md-12"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <form
+                method="post"
+                role="form"
+              >
+              {% csrf_token %}
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars"
+                  />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                    data-rule="email"
+                    data-msg="Please enter a valid email"
+                  />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    data-rule="minlen:4"
+                    data-msg="Please enter at least 8 chars of subject"
+                  />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    data-rule="required"
+                    data-msg="Please write something for us"
+                    placeholder="Message"
+                  ></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="error-message"></div>
+                  {% if sent %}
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                  {% endif %}
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-warning">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 text-lg-left text-center">
+            <div class="copyright">
+              &copy; Copyright <strong>PolyWeb</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+              Designed by <a href="#hero">PolyWeb</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+              <a href="#hero" class="scrollto">Home</a>
+              <a href="#about" class="scrollto">About</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+    <script src="{% static 'vendor/aos/aos.js' %}"></script>
+
+    <!-- Template Main JS File -->
+
+    <script src="{% static 'js/main.js' %}"></script>
+    {% endblock %}
+  </body>
+</html>
